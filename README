@@ -1,0 +1,70 @@
+idan0610
+305681132
+Idan Refaeli
+
+I discussed the exercise with: Eyel Cohen, Amit Tropp.
+
+=============================
+=  README for ex3  =
+=============================
+
+usage: python3.4 findLargest.py
+       python3.4 findSecondSmallest.py
+       python3.4 totalWeight.py       
+       python3.4 twoDimensionalSeek.py
+       python3.4 ithElementValue.py
+       python3.4 decomposition.py
+       python3.4 binaryToDecimal.py
+       python3.4 decimalToBinary.py
+
+==================
+=  Description:  =
+==================
+1. findLargest.py - Find largest number in list
+2. findSecondSmallest.py - Find second smaller number in list
+3. totalWeight.py - Calculate the sum of numbers entered until the user stop
+4. twoDimensionalSeek.py - Find short route to destination
+5. ithElementValue.py - Find the n number in Fibonacci sequence
+6. decomposition.py - Seperate a number to digits
+7. binaryToDecimal.py - Convert a number from binary to decimal base
+8. decimalToBinary.py - Convert a number from decimal to binary base
+9. README.txt - This file
+
+=============================
+=  List of submitted files: =
+=============================
+
+README		This file
+findLargest.py
+findSecondSmallest.py
+totalWeight.py       
+twoDimensionalSeek.py
+decomposition.py
+ithElementValue.py
+binaryToDecimal.py
+decimalToBinary.py
+
+======================
+=  Special Comments  =
+======================
+Answers to Questions in task 9:
+* The two programs acts the same in basic. On the first one It takes the
+decimal number entered, modolu it by 2, takes the result and mulityply it by
+10**count where the count is the number of times the loop runs. Then it divides
+the original decimal number by 10 and repeats the loop with the new decimal
+number.
+The second program is the same code, where only each 10 is replaced by 2, and
+2 is replaced by 10.
+*The minimal change we need to do to program 7 so it acts like program 8, is to
+replace between each 10 and 2 on the code.
+* The program 7 will work on converting different base to decimal, if we
+change every 2 with the new base (works only if the new base is below 10).
+The program 8 will work on converting decimal base to different base, if we
+change every 2 with the new base (works only if the new base is below 10). So
+if we want to convert a number in 4-base to 10-base, we need to replace on
+program 8 every 2 with 4. To convert 6-base number to 2-base, we need first
+to convert it to 10-base, and then to 2-base.
+The reason we need to convert via decimal is because the python do math
+calculations on decimal base.
+It is possible to write a program that converts every base to base, if we
+convert the number from the first base to decimal, and then to the new base.
